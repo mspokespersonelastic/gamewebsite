@@ -1,0 +1,103 @@
+body {
+    background-color: black;
+    color: blanchedalmond;
+    font-family: monospace;
+}
+
+.title {
+    animation: colorTransition 5s infinite linear;
+    text-align: center;
+    font-size: 3rem;
+    user-select: none;
+}
+
+@keyframes colorTransition {
+    0% {
+        color: #8a2be2;
+    }
+
+    50% {
+        color: #ee82ee;
+    }
+
+    100% {
+        color: #8a2be2;
+    }
+}
+
+.link {
+    background-color: blueviolet;
+    transition: all 0.5s ease-in;
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 15px;
+    /* wider padding looks better */
+    display: inline-block;
+    /* important for centering */
+}
+
+.link:hover {
+    background-color: violet;
+    transition: all 0.5s ease-in;
+    transform: scale(1.05);
+}
+
+.link:active {
+    background-color: blueviolet;
+    transform: scale(1);
+    transition: all 1ms ease-in;
+}
+
+.linkcontainer {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.gamebuttoncontainer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gamebutton {
+    width: 100px;
+    height: 100px;
+    border: 5px solid blueviolet;
+    border-radius: 15px;
+    transition: all 0.5s ease-in;
+}
+
+.gamebutton:hover {
+    border-color: violet;
+    transition: all 0.5s ease-in;
+    transform: scale(1.05);
+}
+
+.about {
+    text-align: center;
+}
+
+.video {
+    animation: colorTransitionVideo 5s infinite linear;
+}
+
+@keyframes colorTransitionVideo {
+    0% {
+        border-color: #8a2be2;
+    }
+
+    50% {
+        border-color: #ee82ee;
+    }
+
+    100% {
+        border-color: #8a2be2;
+    }
+}
+
+.videoContainer {
+    justify-content: center;
+    display: flex;
+}
